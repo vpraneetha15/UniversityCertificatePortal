@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# 🎓 University Certificate Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application designed to streamline the management and verification of student certificates in a university setting. This platform provides separate interfaces for *students* and *administrators*, enabling secure uploading, viewing, and management of academic certificates.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 👨‍🎓 *Student Portal*
+  - Secure login & password management
+  - Upload certificates (PDF/image)
+  - View/download uploaded certificates
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🧑‍💼 *Admin Panel*
+  - Admin authentication
+  - Search certificates by course name
+  - View/download certificates submitted by students
+  - Centralized certificate tracking
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔐 *Authentication*
+  - Secure login using JWT (JSON Web Tokens)
+  - Role-based access control (Student/Admin)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Tech Stack
 
-### `npm run build`
+| Layer       | Technology         |
+|-------------|--------------------|
+| Frontend    | React.js, CSS      |
+| Backend     | Node.js, Express.js|
+| Database    | MongoDB (with MongoDB Atlas) |
+| File Storage| Local server-side uploads |
+| Tools       | Postman, MongoDB Compass |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Folder Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+UniversityCertificatePortal/
+└── final/
+    └── Certificate Management/
+        ├── src/
+        │   └── com/
+        │       └── certificate/
+        │           ├── controller/
+        │           │   ├── LoginServlet.java
+        │           │   ├── RegisterServlet.java
+        │           │   ├── UploadCertificateServlet.java
+        │           │   └── ViewCertificatesServlet.java
+        │           ├── model/
+        │           │   └── DBConnection.java
+        │           └── beans/
+        │               └── User.java
+        │
+        ├── WebContent/
+        │   ├── css/
+        │   │   └── style.css
+        │   ├── js/
+        │   │   └── script.js
+        │   ├── images/
+        │   │   └── logo.png
+        │   ├── certificates/ (uploaded certificate files)
+        │   ├── login.jsp
+        │   ├── register.jsp
+        │   ├── dashboard.jsp
+        │   ├── upload.jsp
+        │   └── view.jsp
+        │
+        ├── WEB-INF/
+        │   ├── web.xml (deployment descriptor)
+        │
+        └── README.md
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔧 Setup Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+- Node.js & npm installed
+- MongoDB Atlas account
+- Git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. Clone the Repository
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/your-username/university-certificate-management-system.git
+cd university-certificate-management-system
 
-### Code Splitting
+2. Setup Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+cd server
+npm install
+Create a .env file inside server
 
-### Analyzing the Bundle Size
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm start
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Setup Frontend
+cd client
+npm install
+npm start
+The React app will start at http://localhost:3000
