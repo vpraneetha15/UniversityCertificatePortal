@@ -1,0 +1,27 @@
+/* AboutUs.css */
+.about-us-container {
+    font-family: 'Georgia', serif; /* Change font style */
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0e010ee4;
+  }
+  
+  .about-us-heading {
+    font-size: 2.5em; /* Increased font size for heading */
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .about-us-paragraph {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .about-us-paragraph::last-of-type {
+    margin-bottom: 0;
+  }
+  

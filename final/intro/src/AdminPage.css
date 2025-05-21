@@ -1,0 +1,204 @@
+/* src/AdminPage.css */
+
+.admin-page-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background: #e0f7fa; /* Light cyan background for a formal look */
+  }
+  
+  .welcome-box {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-box h2 {
+    font-size: 2.5rem;
+    color: black;
+  }
+  
+  .search-container {
+    display: flex;
+    /* src/AdminPage.css */
+  
+  .admin-page-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background: #e0f7fa; /* Light cyan background for a formal look */
+  }
+  
+  .welcome-box {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-box h2 {
+    font-size: 2.5rem;
+    color: black;
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 20px;
+  }
+  
+  .search-container input,
+  .deparmnet select,
+  .year select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #1b1b1b;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between fields */
+    width: 200px; /* Consistent width for all fields */
+  }
+  
+  .search-container input {
+    margin-bottom: 10px;
+  }
+  .search-button{
+    color:#5e86ec;
+  }
+  .deparmnet select,
+  .year select {
+    width: 200px; /* Same width for department and year dropdowns */
+  }
+  
+  .search-container button {
+    background-color: #2196f3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(11, 10, 10);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #1976d2;
+  }
+  
+  .results-container {
+    overflow-x: auto;
+  }
+  
+  .results-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .results-container th, .results-container td {
+    border: 1px solid #2f2e2e;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .results-container td {
+    border: 1px solid #5e86ec;
+    padding: 10px;
+    text-align: left;
+    color: black;  /* Changed text color to black */
+  }
+  
+  .results-container th {
+    background-color: #545252;
+  }
+  
+  .results-container td button {
+    background-color: #2196f3;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(32, 31, 31);
+    cursor: pointer;
+  }
+  
+  .results-container td button:hover {
+    background-color: #1976d2;
+  }
+  
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 20px;
+  }
+  
+  .search-container input,
+  .deparmnet select,
+  .year select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #1b1b1b;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between fields */
+    width: 200px; /* Consistent width for all fields */
+  }
+  
+  .search-container input {
+    margin-bottom: 10px;
+  }
+  
+  .deparmnet select,
+  .year select {
+    width: 200px; /* Same width for department and year dropdowns */
+  }
+  
+  .search-container button {
+    background-color: #2196f3;
+    border: none;
+    border-radius: 5px;
+    color: rgb(11, 10, 10);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #1976d2;
+  }
+  
+  .results-container {
+    overflow-x: auto;
+  }
+  
+  .results-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .results-container th, .results-container td {
+    border: 1px solid #2f2e2e;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .results-container td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    color: black;  /* Changed text color to black */
+  }
+  
+  .results-container th {
+    background-color: #545252;
+  }
+  
+  .results-container td button {
+    background-color: #2196f3;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(32, 31, 31);
+    cursor: pointer;
+  }
+  
+  .results-container td button:hover {
+    background-color: #1976d2;
+  }

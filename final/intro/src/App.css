@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 60px; /* Position it below the welcome message */
+  left: 10px;
+  width: 130px;
+  background-color: #333;
+  padding-top: 20px;
+  height: 1000px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 140px); /* Adjust to fit below the navigation bar */
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 1000;
+  text-align: center;
+}
+
+.container {
+  margin-left: 140px; /* Adjust according to the width of the navigation bar */
+  padding-top: 80px; /* Space for fixed header */
+}
+
+.swiper-container {
+  width: calc(100% - 150px); /* Adjust width to cover the gap */
+  height: 200px; /* Decreased the height of the slides further */
+  margin: 20px 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.activities {
+  margin-top: 10px; /* Reduced gap above activities */
+  margin-left: 0; /* Align activities to the left side of the container */
+  display: flex;
+  justify-content: space-between; /* Adjust spacing between activity sections */
+  padding-left: 0; /* Remove left padding */
+}
+
+.activity {
+  text-align: center;
+  width: 45%; /* Adjust width as needed */
+}
+
+.activity img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.activity h2 {
+  margin-bottom: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  .container {
+    margin-left: 0;
+    padding-top: 80px; /* Space for fixed header */
+  }
+
+  .swiper-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .activities {
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activity {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
